@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/web.css"/>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>   
+</head>
+ 
+<body>
+    <img src="Picsart_24-02-04_13-44-03-573.jpg" alt="banner" style="width: 100%; height: 100%">
+    <section>
+        <!--- navigation --->
+        <nav>
+            <!--- menu --->
+            <ul>
+                <button class="w3-bar-item w3-button" onclick="Menu('Home')">Home</button>
+                <button class="w3-bar-item w3-button" onclick="Menu('Achievement')">Achievement</button>
+                <button class="w3-bar-item w3-button" onclick="Menu('Profile')">Profile</button>
+            </ul>
+        </nav>
+ 
+        <!--- text --->
+        <div id="Home" class="text-container w3-container char w3-padding-24 w3-animate-bottom " style="display: none;">
+            <div class="w3-container">
+                <p>Welcome,</p>
+                <p>We are POWER HIGH</p>
+                <p>MLBB Team from Padangsidimpuan</p>
+                <p>"Even at the worst, We are better than you".</p>
+                <button class="hire-btn">START</button>
+            </div>
+            
+        </div>
+        <img alt="model" class="model" src="logo.jpeg">
+
+        <div id="Achievement" class="w3-container char w3-center w3-padding-24" style="display: none; max-width: 1000px; margin: auto;">
+            <div class="w3-container w3-card-4 w3-round-xxlarge">
+                <div class="w3-container">
+                    <h3>Achievement Saya</h3>
+                    <div class="w3-container w3-row-padding">
+                        <p>Juara 1
+                        <div class="w3-row s4"><img src="ph.jpg" alt="Juara 1 Futsal Kadis Pendidikan Sumatra Utara" class="w3-padding-16 w3-animate-zoom" style="height: auto; width: 40%;"></div>
+                        <p>Juara 2 
+                        <div class="w3-row s4"><img src="IMG-20230404-WA0006.jpg" alt="Juara 2 Futsal Tapanuli Selatan" class="w3-padding-16 w3-animate-zoom" style="height: auto; width: 40%;"></div>
+                        <p>Juara 1
+                        <div class="w3-row s4"><img src="IMG-20221227-WA0066.jpg" alt="Juara 1 Futsal Sibolga CUP" class="w3-padding-16 w3-animate-zoom" style="height: auto; width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Profile" class="text-container w3-container char w3-padding-24 w3-animate-bottom " style="display: none;">
+            <div class="w3-container">
+                <img alt="model" class="model" style="position: relative; top: 30px; left: 300px;" src="1695361607760.jpg">
+                <p>PROFILE</p>
+                <p>YUANDA RIZKI SYAHPUTRA - 10123172</p>
+                <p>IF4 - UNIVERSITAS KOMPUTER INDONESIA</p>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+ 
+    <div class="social">
+        <a href="wa.me/62895321537222"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/yuandarizky07/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/wndarzky_/?next=%2F"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <script>
+        function Menu(Karakter) {
+            var i;
+            var x = document.getElementsByClassName("char");
+            for (i = 0;i < x.length;i++){
+                x[i].style.display = "none";
+            }
+            document.getElementById(Karakter).style.display = "block";
+        }
+    </script>
+</body>
+ 
+</html>

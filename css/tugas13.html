@@ -1,0 +1,30 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+ <h1>MEMBUAT MENU</h1>
+</div>
+<div class="w3-bar w3-blue">
+ <button class="w3-bar-item w3-button" onclick="openKota('Mobil')">Mobil</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Mart')">UnikomMart</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kampus')">Kampus</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Foto')">Foto</button>
+</div>
+<img id="Mobil" class="w3-container kota w3-animate-fading" src="car.jpg" style="width: 1080px; display: none;"></img>
+<img id="Mart" class="w3-container kota w3-animate-bottom" src="minum.jpg" style="width: 800px; display:none"></img>
+<img id="Kampus" class="w3-container kota w3-animate-top" src="gedung.jpg" style="width:800px; display:none"></img>
+<img id="Foto" class="w3-container kota w3-animate-zoom" src="pacarku.jpg" style="width: 1080px; display: none;"></img>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
